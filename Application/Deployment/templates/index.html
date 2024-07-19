@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fraud Detection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>BPJS Fraud Detection</h2>
+
+  <h3> BPJS </h3>
+  <form class="form-horizontal" action="post">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Kode Wilayah:</label>
+      
+      <div class="col-md-4 selectContainer">
+        <input type="number" class="form-control" id="email" name="email" width= "48% ">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Kode Kabupaten/Kota:</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></span>
+                    <select name="department" class="form-control selectpicker">
+                        <option value="">Select your Department/Office</option>
+                        <option>Department of Engineering</option>
+                        <option>Department of Agriculture</option>
+                        <option >Accounting Office</option>
+                        <option >Tresurer's Office</option>
+                        <option >MPDC</option>
+                        <option >MCTC</option>
+                        <option >MCR</option>
+                        <option >Mayor's Office</option>
+                        <option >Tourism Office</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Kode Tipe Rumah Sakit:</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></span>
+                    <select name="department" class="form-control selectpicker">
+                        <option value="">Kode Tipe Rumah Sakit</option>
+                        <option>A</option>
+                        <option>C</option>
+                        <option >D</option>
+                        <option >GD</option>
+                        <option >HD</option>
+                        <option >l1</option>
+                        <option >l2</option>
+                        <option >l3</option>
+                        <option >l4</option>
+                        <option >KB</option>
+                        <option >KC</option>
+                        <option >KG</option>
+                        <option >KI</option>
+                        <option >KJ</option>
+                        <option >KM</option>
+                        <option >KL</option>
+                        <option >KO</option>
+                        <option >KP</option>
+                        <option >KT</option>
+                        <option >KU</option>
+                        <option >SA</option>
+                        <option >SB</option>
+                        <option >SC</option>
+                        <option >SD</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+
+    <h3>Patient </h3>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Umur Pasien:</label>
+        <div class="col-md-4 selectContainer">          
+          <input type="number" class="form-control" id="pwd"  name="kab-kota">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Jenis Kelamin</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></i></span>
+                    <select name="department" class="form-control selectpicker">
+                        <option value="">Jenis Kelamin</option>
+                        <option>P</option>
+                        <option>L</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+
+    <h3> Perawatan </h3>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Tingkat Pelayanan:</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></span>
+                    <select name="department" class="form-control selectpicker">
+                        <option value="">Tingkat Pelayanan</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Waktu Rawat:</label>
+        <div class="col-md-4 selectContainer">          
+          <input type="number" class="form-control" id="pwd"  name="kab-kota">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Klasifikasi CMG</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></span>
+                    <select name="department" class="form-control">
+                        <option value="">Klasifikasi CMG</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                        <option>F</option>
+                        <option>G</option>
+                        <option>l2</option>
+                        <option>l3</option>
+                        <option>l4</option>
+                        <option>KB</option>
+                        <option>KC</option>
+                        <option>KG</option>
+                        <option>KI</option>
+                        <option>KJ</option>
+                        <option>KM</option>
+                        <option>KL</option>
+                        <option>KO</option>
+                        <option>KP</option>
+                        <option>KT</option>
+                        <option>KU</option>
+                        <option>SA</option>
+                        <option>SB</option>
+                        <option>SC</option>
+                        <option>SD</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Tingkat Urgensi</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></span>
+                    <select name="department" class="form-control">
+                        <option value="">Tingkat Urgensi</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+    <h3> Diagnosa</h3>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Diagnosa Primer1</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></span>
+                    <select name="department" class="form-control">
+                        <option value="">Klasifikasi CMG</option>
+                        <option> a00_b99</option>
+                        <option>c00_d48</option>
+                        <option>d50_d89</option>
+                        <option>e00_e90</option>
+                        <option>f00_f99</option>
+                        <option>g00_g99</option>
+                        <option>h00_h59</option>
+                        <option>h60_h95</option>
+                        <option>i00_i99</option>
+                        <option>j00_j99</option>
+                        <option>koo_k93</option>
+                        <option>l00_l99</option>
+                        <option>m00_m99</option>
+                        <option>o00_o99</option>
+                        <option>p00_p96</option>
+                        <option>q00_q99</option>
+                        <option>r00_r99</option>
+                        <option>s00_t98</option>
+                        <option>u00_u99</option>
+                        <option>v01_y98</option>
+                        <option>z00_z99</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Diagnosa Primer2</label>
+        <div class="col-md-4 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"></span>
+                    <select name="department" class="form-control">
+                        <option value="">Klasifikasi CMG</option>
+                        <option> 4019.0</option>
+                        <option>2724.0</option>
+                        <option>5849.0</option>
+                        <option>311.0</option>
+                        <option>2762.0</option>
+                        <option>4439.0</option>
+                        <option>496.0</option>
+                        <option>5185.0</option>
+                        <option>4139.0</option>
+                        <option>9971.0</option>
+                        <option>412.0</option>
+                        <option>4254.0</option>
+                        <option>5119.0</option>
+                        <option>3572.0</option>
+                        <option>2749.0</option>
+                        <option>2761.0</option>
+                        <option>9974.0</option>
+                        <option>5845.0</option>
+                        <option>4264.0</option>
+                        <option>4263.0</option>
+                        <option>7994.0</option>
+                        <option>1629.0</option>
+                        <option>7802.0</option>
+                        <option>5789.0</option>
+                        <option>3320.0</option>
+                        <option>4011.0</option>
+                        <option>7823.0</option>
+                        <option>4414.0</option>
+                        <option>2752.0</option>
+                        <option>570.0</option>
+                        <option>185.0</option>
+                        <option>7850.0</option>
+                        <option>7854.0</option>
+                        <option>5781.0</option>
+                        <option>4104.0</option>
+                        <option>2763.0</option>
+                        <option>9982.0</option>
+                        <option>4240.0</option>
+                        <option>2763.0</option>
+                        <option>9982.0</option>
+                        <option>4240.0</option>
+                        <option>5363.0</option>
+                        <option>7837.0</option>
+                        <option>920.0</option>
+                        <option>7830.0</option>
+                        <option>5641.0</option>
+                        <option>1122.0</option>
+                        <option>3899.0</option>
+                        <option>3963.0</option>
+                        <option>3481.0</option>
+                        <option>8670.0</option>
+                        <option>4241.0</option>
+                        <option>7907.0</option>
+                    </select>
+            </div>
+        </div>
+        </div>
+            <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default" style="background-color:#B0C4DE;">Prediksi</button>
+            </div>
+            </div>
+        </form>
+    </main>
+
+    <section class="mt-8 h-full flex-auto rounded-lg md:mt-0 md:ml-8">
+        <div class="bg-white p-16 rounded-lg">
+            <h1 class="text-2xl mb-8">
+                Prediksi Data BPPJS adalah :
+            </h1>
+            <h2 class="text-5xl font-bold"> {{ label }}</h2>
+            {% if (label) != 0 %}
+            <div class="mt-8">
+                <p>Data Fraud</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
